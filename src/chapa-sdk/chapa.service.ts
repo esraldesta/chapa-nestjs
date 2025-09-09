@@ -5,7 +5,6 @@ import {
   HttpException,
   BadRequestException,
 } from '@nestjs/common';
-import { customAlphabet } from 'nanoid/async';
 import { alphanumeric } from 'nanoid-dictionary';
 import { CHAPA_OPTIONS } from './constants';
 import { ChapaUrls } from './enums';
@@ -25,6 +24,7 @@ import {
   validateInitializeOptions,
   validateVerifyOptions,
 } from './validations';
+import { customAlphabet } from 'nanoid';
 
 /**
  * Interface for ChapaService
