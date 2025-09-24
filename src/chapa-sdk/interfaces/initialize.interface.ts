@@ -12,6 +12,7 @@ export interface InitializeOptions {
   currency: string;
   amount: string;
   tx_ref: string;
+  phone_number?: string;
   callback_url?: string;
   return_url?: string;
   customization?: {
